@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Cassini View Controller-->
         <scene sceneID="JzA-bS-b3i">
             <objects>
-                <viewController id="KFW-z4-9Gy" sceneMemberID="viewController">
+                <viewController id="KFW-z4-9Gy" customClass="CassiniViewController" customModule="Cassini" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jFe-X1-Zdg"/>
                         <viewControllerLayoutGuide type="bottom" id="cac-oC-udr"/>
@@ -88,6 +88,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="4rc-TK-heO">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.85683593749999998" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmV-7p-vfa">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
@@ -103,6 +108,7 @@
                     <navigationItem key="navigationItem" id="T4j-BP-Gls"/>
                     <connections>
                         <outlet property="scrollView" destination="fmV-7p-vfa" id="Vlt-ON-dle"/>
+                        <outlet property="spinner" destination="4rc-TK-heO" id="ljr-Xc-Dxq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIk-bw-meB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -147,6 +153,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="clg-fH-fIG"/>
+        <segue reference="hw1-nt-Zvd"/>
     </inferredMetricsTieBreakers>
 </document>

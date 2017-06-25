@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct DemoURL {
+struct DemoURL
+{
     static let stanford = URL(string: "http://stanford.edu/about/images/intro_about.jpg")
-    
-    static let NASA: Dictionary<String,URL> = {
+    static var NASA: Dictionary<String,URL> = {
         let NASAURLStrings = [
-            "Cassini": "http://www.jpl.nasa.gov/images/cassini/20090202/pia03883-full.jpg",
-            "Earth": "http://www.nasa.gov/sites/default/files/wave_earth_mosaic_3.jpg",
-            "Saturn": "http://www.nasa.gov/sites/default/files/saturn_collage.jpg"
+            "Cassini" : "https://pic1.zhimg.com/v2-541cc1de4964934b25c033dc39051420_r.png",
+            "Earth": "https://pic2.zhimg.com/v2-adc9242cc79826ca4bfff2866a58e649_r.png",
+            "Saturn" : "https://pic2.zhimg.com/v2-54f2c78bdc1751965f6c1e1805507649.png"
         ]
         var urls = Dictionary<String,URL>()
         for (key, value) in NASAURLStrings {
